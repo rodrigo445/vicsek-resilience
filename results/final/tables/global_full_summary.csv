@@ -1,0 +1,10 @@
+N,comparison,interpretation,gain,ci95_lower,ci95_upper,bootstrap_fraction_positive,status,source
+100,M0->M1,linear_mesostructure,0.3075755293999204,0.2393878047287448,0.3774492126740422,1.0,robust,clean_pipeline
+100,P0->Pk,mean_degree_after_nonlinear_macro,0.2855797789426072,0.230250944046774,0.3403970624994913,1.0,robust,clean_pipeline
+100,P0->P1,full_mesostructure_after_nonlinear_macro,0.3101647790658741,0.2515058663712088,0.3634021093702734,1.0,robust,clean_pipeline
+400,M0->M1,linear_mesostructure,0.115626819187931,0.0602173428799537,0.1701262238889703,1.0,robust,clean_pipeline
+400,P0->Pk,mean_degree_after_nonlinear_macro,0.0499821255109848,0.013997260407058,0.0841152726536448,0.996,robust,clean_pipeline
+400,P0->P1,full_mesostructure_after_nonlinear_macro,-0.0198949856335847,-0.2741331231060049,0.1284350699718491,0.478,legacy_sensitivity,clean_pipeline
+1600,M0->M1,linear_mesostructure,0.0729494054250095,0.0262540459436469,0.1185997635102818,0.9985,robust,clean_pipeline
+1600,P0->Pk,mean_degree_after_nonlinear_macro,0.0404698685433844,0.0058227030984263,0.0718579362023802,0.989,robust,clean_pipeline
+1600,P0->P1,full_mesostructure_after_nonlinear_macro,0.0572613889285176,0.0129499080831277,0.0995772766355265,0.9925,robust,clean_pipeline

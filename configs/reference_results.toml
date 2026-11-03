@@ -1,0 +1,41 @@
+# Benchmarks recorded after the exploratory analysis was frozen.
+# Fractions are stored as proportions, not percentages.
+
+[global.N100]
+M0_to_M1 = 0.3046
+P0_to_Pk = 0.2823
+P0_to_P1 = 0.3029
+
+[global.N400]
+M0_to_M1 = 0.1153
+P0_to_Pk = 0.0513
+P0_to_P1 = 0.0390
+
+[global.N1600]
+M0_to_M1 = 0.0719
+P0_to_Pk = 0.0424
+P0_to_P1 = 0.0577
+
+[local.N100_m10]
+ridge_MG_to_M2 = 0.0197
+hgb_MG_to_M2 = 0.0295
+ridge_within = 0.0192
+hgb_within = 0.0198
+
+[local.N400_m10]
+ridge_MG_to_M2 = 0.01496
+hgb_MG_to_M2 = 0.02377
+ridge_within = 0.01392
+hgb_within = 0.01124
+
+[local.N1600_m10]
+ridge_MG_to_M2 = 0.00059
+hgb_MG_to_M2 = 0.00098
+ridge_within = 0.00018
+hgb_within = -0.0069
+
+[local.N1600_m160]
+ridge_MG_to_M2 = 0.0322
+hgb_MG_to_M2 = 0.0436
+ridge_within = 0.0324
+hgb_within = 0.0323

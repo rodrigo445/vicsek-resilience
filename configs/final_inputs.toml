@@ -1,0 +1,45 @@
+# Canonical inputs in the exploratory project. The clean repository never
+# searches for "the most plausible" file: these paths are explicit.
+
+[global.N100]
+state_response = "results/day27b/state_level_response_R128_720.csv"
+fold_assignment = ""
+
+[global.N400]
+states = "results/day30/phaseB1_N400_state_table_432.csv"
+state_response = "results/day30/phaseB3_N400_final_R128_state_response.csv"
+fold_assignment = "results/day30/phaseC_N400_outer_fold_assignment.csv"
+
+[global.N1600]
+states = "results/day31/phaseB4_final9_N1600_state_table_432.csv"
+state_response = "results/day31/phaseB7_N1600_final9_R128_state_response_432.csv"
+fold_assignment = "results/day31/phaseC1_final9_N1600_outer_fold_assignment.csv"
+
+[local.N400_m10]
+states = "results/day30/phaseB1_N400_state_table_432.csv"
+replicates = "results/day30/phaseE1_N400_m10_R32_response_dataset.csv"
+target = "auc_abs_delta_phi_0_100"
+response_window = 100
+
+# Matched-horizon extension used for cross-size comparisons.
+# It uses the same frozen replicate file as N400_m10 and changes only the
+# precomputed response column from AUC(0,100) to AUC(0,300).
+[local.N400_m10_T300]
+states = "results/day30/phaseB1_N400_state_table_432.csv"
+replicates = "results/day30/phaseE1_N400_m10_R32_response_dataset.csv"
+target = "auc_abs_delta_phi_0_300"
+response_window = 300
+
+[local.N1600_m10]
+states = "results/day31/phaseB4_final9_N1600_state_table_432.csv"
+replicates = "results/day32/phaseF2_N1600_m10_R32_replicates.csv"
+target = "response"
+response_window = 300
+fold_assignment = "results/day31/phaseC1_final9_N1600_outer_fold_assignment.csv"
+
+[local.N1600_m160]
+states = "results/day31/phaseB4_final9_N1600_state_table_432.csv"
+replicates = "results/day31/phaseB7_N1600_final9_R128_replicates_55296.csv"
+target = "response"
+response_window = 300
+fold_assignment = "results/day31/phaseC1_final9_N1600_outer_fold_assignment.csv"

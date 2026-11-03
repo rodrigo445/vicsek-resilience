@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.DS_Store
+Thumbs.db
+
+# Large/generated analysis internals are not versioned.
+results/final/*
+!results/final/.gitkeep
+!results/final/reference_validation.csv
+!results/final/input_audit.csv
+!results/final/response_semantics_audit.csv
+!results/final/environment_snapshot.txt
+!results/final/tables/
+!results/final/tables/*.csv
+
+# Keep only final publication figures, not temporary figure products.
+figures/*
+!figures/final/
+figures/final/*
+!figures/final/.gitkeep
+!figures/final/*.png
+!figures/final/*.pdf

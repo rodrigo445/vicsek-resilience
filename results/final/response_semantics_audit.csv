@@ -1,0 +1,10 @@
+check,value,pass,note
+N400_has_complete_T100_and_T300_AUC,13824,True,Both precomputed response windows must be present for every replicate.
+N400_AUC_T300_ge_T100,1.0,True,Absolute-integral response over 0..300 cannot be smaller than over 0..100.
+N1600_m10_horizon_is_300,300,True,The matched-horizon comparison requires every replicate to declare horizon=300.
+N1600_m10_response_consistent_with_full_T300,0.9992287784960916,True,Median response / (mean_abs_phi_difference * 300); ~1 indicates full-horizon integration.
+N1600_m160_horizon_is_300,300,True,The matched-horizon comparison requires every replicate to declare horizon=300.
+N1600_m160_response_consistent_with_full_T300,0.9995754529717653,True,Median response / (mean_abs_phi_difference * 300); ~1 indicates full-horizon integration.
+N1600_m160_response_equals_explicit_T300_where_available,1.0,True,Explicit T300 AUC coverage=0.222.
+N1600_m160_response_original_columns,<NA>:43008; auc_abs_delta_phi_0_300:12288,True,Provenance only; retained to make any mixed historical source explicit.
+N1600_m160_source_response,B6_new_R128:43008; B3_reused_R128:12288,True,Provenance only.

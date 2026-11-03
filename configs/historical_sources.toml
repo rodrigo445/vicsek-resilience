@@ -1,0 +1,11 @@
+# Optional provenance pointers to exploratory result tables.
+# These files are NOT required to run the clean pipeline. Frozen numerical
+# benchmarks used for validation live in configs/reference_results.toml.
+
+[reference]
+N400_m10_local_gain = "results/day30/phaseE2_N400_m10_m40_local_gain.csv"
+N400_m10_within_gain = "results/day30/phaseE2_N400_m10_m40_within_gain.csv"
+N1600_m10_predictive = "results/day32/phaseF3_N1600_m10_vs_m160_predictive_summary.csv"
+N100_global_nonlinear = "results/day32/phaseF1_N100_macro_nonlinearity_bootstrap.csv"
+N400_global_nonlinear = "results/day32/phaseF1_N400_macro_nonlinearity_bootstrap.csv"
+N1600_global_nonlinear = "results/day31/phaseC5_final9_N1600_nonlinear_macro_single_add.csv"
